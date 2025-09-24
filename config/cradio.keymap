@@ -5,24 +5,109 @@
     combos {
         compatible = "zmk,combos";
 
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        ent {
+            bindings = <&kp ENTER>;
+            key-positions = <18 17>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 1>;
+        tilde {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 11>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <21 22>;
+        excamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <0 10>;
         };
 
-        ent {
-            bindings = <&kp ENTER>;
-            key-positions = <27 28>;
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <5 15>;
+        };
+
+        sobaka {
+            bindings = <&kp AT>;
+            key-positions = <1 11>;
+        };
+
+        and {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <6 16>;
+        };
+
+        hashtag {
+            bindings = <&kp HASH>;
+            key-positions = <2 12>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <7 17>;
+        };
+
+        dolla {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+        };
+
+        openpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <8 18>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+        };
+
+        closeparen {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <9 19>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <17 27>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <16 26>;
+        };
+
+        frwdslash {
+            bindings = <&kp SLASH>;
+            key-positions = <18 28>;
+        };
+
+        bckslash {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <19 29>;
+        };
+
+        sqbrc {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <12 22>;
+        };
+
+        sqcls {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <13 23>;
         };
     };
 
@@ -31,10 +116,10 @@
 
         ETH {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R   &kp T         &kp Y      &kp U   &kp I      &kp O       &kp P
-&kp A  &kp S  &kp D  &kp F   &kp G         &kp H      &kp J   &kp K      &kp L       &kp SEMI
-&kp Z  &kp X  &kp C  &kp V   &kp B         &kp N      &kp M   &kp COMMA  &kp PERIOD  &kp RSHFT
-                     &tog 1  &kp LSHIFT    &kp SPACE  &tog 2
+&kp Q  &kp W  &kp F  &kp P           &kp B     &kp J   &kp L      &kp U      &kp Y    &kp APOS
+&kp A  &kp R  &kp S  &kp T           &kp G     &kp M   &kp N      &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D           &kp V     &kp K   &kp H      &kp COMMA  &kp DOT  &kp SEMI
+                     &kp LEFT_SHIFT  &tog 1    &tog 2  &kp SPACE
             >;
         };
 
@@ -58,10 +143,10 @@
 
         DAPP {
             bindings = <
-&kp N1     &kp N2    &kp N3    &kp N4   &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&sk LCTRL  &sk LGUI  &sk LALT  &kp TAB  &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
-&sk LSHFT  &trans    &trans    &trans   &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans
-                           &trans  &trans    &trans  &trans
+&kp N1     &kp N2    &kp N3    &kp N4   &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+&sk LCTRL  &sk LGUI  &sk LALT  &kp TAB  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
+&sk LSHFT  &trans    &trans    &trans   &trans    &kp N0  &kp N1  &kp N2  &kp N3  &trans
+                               &trans   &trans    &trans  &trans
             >;
         };
     };
